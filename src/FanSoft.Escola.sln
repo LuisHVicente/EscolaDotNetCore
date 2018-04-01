@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2015
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FanSoft.Escola.MVCUI", "FanSoft.Escola.MVCUI\FanSoft.Escola.MVCUI.csproj", "{A1A5583A-6CB4-42A1-9BD8-546AE7264B09}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1A5583A-6CB4-42A1-9BD8-546AE7264B09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1A5583A-6CB4-42A1-9BD8-546AE7264B09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1A5583A-6CB4-42A1-9BD8-546AE7264B09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1A5583A-6CB4-42A1-9BD8-546AE7264B09}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {41FB2B0E-4648-49E0-BA0B-BB4995D07DE3}
+	EndGlobalSection
+EndGlobal
