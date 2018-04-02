@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using FanSoft.Escola.MVCUI.Infra.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -13,14 +10,19 @@ namespace FanSoft.Escola.MVCUI
     {
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddScoped<Data.EscolaDataContext>();
             services.AddMvc();
         }
 
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, Data.EscolaDataContext ctx)
         {
+            app.UseStaticFiles();
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                Data.DbInitializer.Init(ctx);
+                app.UseNodeModules(env.ContentRootPath);
             }
 
             app.UseMvc(routes =>
